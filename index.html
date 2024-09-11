@@ -47,10 +47,10 @@
         </div>
     </main>
 
-    <script>
+    <script type="module">
         const http = require("http")
         const fs = require("fs")
-        
+
         const textArea = document.querySelector(".mensagem")
         textArea.addEventListener('keydown', (e) => {
             if (e.key === "Enter") {

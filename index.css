@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/*header*/
+header{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.espaco-da-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 100px;
+    width: 300px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+
+nav{
+    height: 100px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+
+.pra-nada{
+    height: 100px;
+    width: 300px;
+    background-color: gray;
+}
+
+/*menu*/
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*primeira parte ----------------------------------------*/
+
+.avaliacoes-da-musica{
+    height: 450px;
+    width: 300px;
+    background-color: gray;
+}
+
+.foto-do-album{
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+}
+
+/*segunda parte ----------------------------------------*/
+
+.lista-de-musicas{
+    height: 450px;
+    width: 700px;
+    background-color: gray;
+}
+
+.controle-da-musica{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 200px;
+    width: 700px;
+}
+
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    height: 200px;
+}
+
+.tempo{
+    height: 10px;
+    width: 700px;
+    background-color: gray;
+}
+
+.al{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.retroceder{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.pausar{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.passar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.r{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+/*segunda parte ----------------------------------------*/
+
+.chat{
+    height: 450px;
+    width: 300px;
+    background-color: gray;
+}
+
+.mensagem{
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+}

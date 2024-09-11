@@ -28,7 +28,7 @@
             "dest":"/mensage.json"
         },
         {
-            "src": "/treino",
+            "src": "/ola.js",
             "dest":"/ola.js"
         }
     ]

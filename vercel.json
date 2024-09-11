@@ -9,23 +9,7 @@
     "routes": [
         {
             "src": "/",
-            "dest":"/index.html"
-        },
-        {
-            "src": "/index.css",
-            "dest":"/index.css"
-        },
-        {
-            "src": "/img/logo.jpeg",
-            "dest":"/img/logo.jpeg"
-        },
-        {
-            "src": "/engine.js",
-            "dest":"/engine.js"
-        },
-        {
-            "src": "/mensage.json",
-            "dest":"/mensage.json"
+            "dest":"/API/index.js"
         }
     ]
 }

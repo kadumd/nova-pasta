@@ -26,6 +26,10 @@
         {
             "src": "/mensage.json",
             "dest":"/mensage.json"
+        },
+        {
+            "src": "/treino",
+            "dest":"/mensage.json"
         }
     ]
 }

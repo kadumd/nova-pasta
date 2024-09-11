@@ -32,7 +32,7 @@ const server = http.createServer((pedido, resposta) => {
             break;
 
 
-        case '/API/index.js':
+        case '/mensage.json':
             pedido.on('data', (dados) => {
                 let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
                 let novosDados = JSON.parse(dados)

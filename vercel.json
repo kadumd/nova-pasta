@@ -29,7 +29,7 @@
         },
         {
             "src": "/treino",
-            "dest":"/mensage.json"
+            "dest":"/API/index.js"
         }
     ]
 }

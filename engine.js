@@ -1,5 +1,5 @@
 const chat = document.querySelector(".chat")
-const oi = await fetch("./men.json")
+const oi = await fetch("./mensage.json")
 const servidor = await oi.json()
 
 servidor.forEach(dados => {

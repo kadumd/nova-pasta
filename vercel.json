@@ -28,8 +28,8 @@
             "dest":"/mensage.json"
         },
         {
-            "src": "/API/index.js",
-            "dest":"/API/index.js"
+            "src": "/treino",
+            "dest":"/ola.js"
         }
     ]
 }

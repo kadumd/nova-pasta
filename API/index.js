@@ -30,6 +30,19 @@ const server = http.createServer((pedido, resposta) => {
             resposta.writeHead(200, { "Content-Type": "application/json" });
             resposta.end(fs.readFileSync("./mensage.json"))
             break;
+
+
+        case '/treino':
+            pedido.on('data', (dados) => {
+                console.log(dados)
+                let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
+                let novosDados = JSON.parse(dados)
+
+                dadosDoBanco.push(novosDados)
+
+                fs.writeFileSync('mensage.json', JSON.stringify(dadosDoBanco));
+            })
+            break;
     }
 })
 

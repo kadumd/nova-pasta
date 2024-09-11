@@ -32,14 +32,14 @@ const server = http.createServer((pedido, resposta) => {
             break;
 
 
-        case '/mensage.json':
+        case '/men.json':
             pedido.on('data', (dados) => {
-                let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
+                let dadosDoBanco = JSON.parse(fs.readFileSync('./men.json'))
                 let novosDados = JSON.parse(dados)
 
                 dadosDoBanco.push(novosDados)
 
-                fs.writeFileSync('mensage.json', JSON.stringify(dadosDoBanco));
+                fs.writeFileSync('men.json', JSON.stringify(dadosDoBanco));
             })
             break;
             //ola

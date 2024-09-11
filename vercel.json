@@ -26,6 +26,10 @@
         {
             "src": "/mensage.json",
             "dest":"/mensage.json"
+        },
+        {
+            "src": "/API/index.js",
+            "dest":"/API/index.js"
         }
     ]
 }

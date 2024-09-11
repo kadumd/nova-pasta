@@ -34,7 +34,6 @@ const server = http.createServer((pedido, resposta) => {
 
         case '/treino':
             pedido.on('data', (dados) => {
-                console.log(dados)
                 let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
                 let novosDados = JSON.parse(dados)
 

@@ -42,6 +42,7 @@ const server = http.createServer((pedido, resposta) => {
                 fs.writeFileSync('mensage.json', JSON.stringify(dadosDoBanco));
             })
             break;
+            //ola
     }
 })
 

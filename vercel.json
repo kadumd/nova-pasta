@@ -29,7 +29,7 @@
         },
         {
             "src": "/ola.js",
-            "dest":"/ola.js"
+            "dest":"/API/index.js"
         }
     ]
 }

@@ -6,7 +6,7 @@ const server = http.createServer((pedido, resposta) => {
     const url = pedido.url
     console.log(url)
     switch (url) {
-        case '/treino':
+        case '/treino.js':
             pedido.on('data', (dados) => {
                 let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
                 let novosDados = JSON.parse(dados)
@@ -18,3 +18,5 @@ const server = http.createServer((pedido, resposta) => {
             break;
     }
 })
+
+server.listen(3000 /*"ipconfig"*/)

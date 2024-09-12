@@ -47,7 +47,19 @@
         </div>
     </main>
 
-    <script type="module" src="./ola.js"></script>
+    <script>
+        const textArea = document.querySelector(".mensagem")
+        textArea.addEventListener('keydown', (e) => {
+            if (e.key === "Enter") {
+                const nome = textArea.value
+
+                fetch('/treino', {
+                    method: "POST",
+                    body: JSON.stringify({ nome: nome })
+                })
+            }
+        })
+    </script>
 </body>
 
 </html>

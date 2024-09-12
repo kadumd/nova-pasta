@@ -26,6 +26,10 @@
         {
             "src": "/mensage.json",
             "dest":"/mensage.json"
+        },
+        {
+            "src": "/ola.js",
+            "dest":"/ola.js"
         }
     ]
 }

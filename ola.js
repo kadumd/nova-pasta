@@ -1,5 +1,5 @@
 const fs = require('fs')
-
+//ola
 const textArea = document.querySelector(".mensagem")
 textArea.addEventListener('keydown', (e) => {
     if (e.key === "Enter") {

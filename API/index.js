@@ -33,6 +33,8 @@ const server = http.createServer((pedido, resposta) => {
 
 
         case '/index.js':
+            resposta.writeHead(200, { "Content-Type": "text/javascript" });
+            resposta.end(fs.readFileSync("./index.js"))
             pedido.on('data', (dados) => {
                 let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
                 let novosDados = JSON.parse(dados)

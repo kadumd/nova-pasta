@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
-    <script type="module" src="./engine.js" defer></script>
+
 </head>
 
 <body>
@@ -43,23 +43,11 @@
         <!-- terceira parte -->
         <div>
             <div class="chat"></div>
-            <textarea name="" id="" class="mensagem"></textarea>
+            <input type="text" class="mensagem">
         </div>
     </main>
 
-    <script>
-        const textArea = document.querySelector(".mensagem")
-        textArea.addEventListener('keydown', (e) => {
-            if (e.key === "Enter") {
-                const nome = textArea.value
-
-                fetch('/treino', {
-                    method: "POST",
-                    body: JSON.stringify({ nome: nome })
-                })
-            }
-        })
-    </script>
+    <script type="module" src="./engine.js"></script>
 </body>
 
 </html>

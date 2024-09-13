@@ -26,22 +26,24 @@ const server = http.createServer((pedido, resposta) => {
             resposta.end(fs.readFileSync("./engine.js"))
             break;
 
-        case '/mensage.json':
-            resposta.writeHead(200, { "Content-Type": "application/json" });
-            resposta.end(fs.readFileSync("./mensage.json"))
-            break;
-
-
         case '/treino':
             pedido.on('data', (dados) => {
-                let dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
-                let novosDados = JSON.parse(dados)
+                //parece que o erro está por aqui "pq o codigo para de ser executado aqui"
+                const dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
+                //----------------
+                const novosDados = JSON.parse(dados)
 
                 dadosDoBanco.push(novosDados)
 
                 fs.writeFileSync('mensage.json', JSON.stringify(dadosDoBanco));
             })
             break;
+
+        
+            case '/mensage.json':
+                resposta.writeHead(200, { "Content-Type": "application/json" });
+                resposta.end(fs.readFileSync("./mensage.json"))
+                break;
     }
 })
 

@@ -3,12 +3,13 @@ mensagem.addEventListener('keydown', async (e) => {
     if (e.key === "Enter") {
         const nome = mensagem.value
         
-
+        //o erro tambem pode estar por aqui
+    
         fetch('/treino', {
             method: "POST",
-            body: JSON.stringify({ nome: nome })
+            body: JSON.stringify({ nome: nome }),
         })
-
+        //-------------
         const chat = document.querySelector(".chat")
         const oi = await fetch("./mensage.json")
         const servidor = await oi.json()

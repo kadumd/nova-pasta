@@ -21,11 +21,3 @@ export default function handler(pedido, resposta) {
         resposta.status(405).json({ error: 'Method not allowed' });
     }
 }
-
-// Função para criar uma saudação
-function createGreeting(name) {
-    return `Hello, ${name}!`;
-}
-
-
-

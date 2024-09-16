@@ -1,5 +1,8 @@
+// api/hello.js
+
 export default function handler(pedido, resposta) {
-    if (pedido.url === '/treino') {
+    if (pedido.method === 'POST') {
+
         pedido.on('data', (dados) => {
             const fs = require("fs")
             //parece que o erro está por aqui "pq o codigo para de ser executado aqui"
@@ -11,7 +14,18 @@ export default function handler(pedido, resposta) {
 
             fs.writeFileSync('mensage.json', JSON.stringify(dadosDoBanco));
         })
+
+        resposta.status(200).json({ message: "ola" });
     } else {
-        resposta.status(405).json({ message: 'Método não permitido' });
+        // Responder com erro se o método não for POST
+        resposta.status(405).json({ error: 'Method not allowed' });
     }
 }
+
+// Função para criar uma saudação
+function createGreeting(name) {
+    return `Hello, ${name}!`;
+}
+
+
+

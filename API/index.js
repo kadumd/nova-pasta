@@ -28,6 +28,7 @@ const server = http.createServer((pedido, resposta) => {
 
         case '/treino':
             pedido.on('data', (dados) => {
+                console.log(JSON.parse(dados))
                 //parece que o erro está por aqui "pq o codigo para de ser executado aqui"
                 const dadosDoBanco = JSON.parse(fs.readFileSync('./mensage.json'))
                 //----------------
